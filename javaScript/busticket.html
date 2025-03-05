@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>bus ticket</h2>
+    <script>
+        function calculateCost() {
+            const ticketPrice = 300;
+            const numTickets = parseInt(document.getElementById('numTickets').value);
+            const age = parseInt(document.getElementById('age').value);
+            
+            // Calculate total cost before discount
+            const totalCost = ticketPrice * numTickets;
+    
+            // Calculate discount and final cost using ternary operator
+            const discount = (age >= 60 && age <= 100) ? (totalCost * 0.20) : 0;
+            const finalCost = totalCost - discount;
+    
+            // Prepare the output message
+            const resultMessage = `
+                Total cost before discount: Rs. ${totalCost.toFixed(2)}<br>
+                Discount amount: Rs. ${discount.toFixed(2)}<br>
+                Total cost after discount: Rs. ${finalCost.toFixed(2)}
+            `;
+    
+            // Display the result
+            document.getElementById('result').innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>

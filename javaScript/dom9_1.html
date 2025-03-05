@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            display: inline-block;
+            border: 1px solid black;
+            font-size: 11px;
+        }
+        .container button, input {
+            border: none;
+        }
+        input {
+            width: 50px;
+            text-align: center;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="box2-2.jpg" alt="" width="150px" height="150px">
+        <h4>Baskin Robbins - Ice Cream Desserts</h4>
+        <h3>Thunder Hot Fudge &nbsp; &nbsp; :&#8377;200</h3>
+
+        <div class="container">
+            <button id="decre">-</button>
+            <input type="text" id="qty" value="0">
+            <button id="incre">+</button>
+        </div>
+        <br>
+        <br>
+        <strong>Bill details:</strong> <br>
+        <span>Item Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </span>
+        <output id="item">&#8377;0</output> <br>
+        <span>GST & Charge &nbsp;&nbsp; </span>
+        <output id="gst">&#8377;0</output> <br>
+        <strong>To Pay  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </strong>
+        <output id="totAmt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8377;0</output>
+    </div>
+
+    <script>
+        let tamt, tax, iamt;
+        const qty = document.getElementById("qty");
+        const itemTotal = document.getElementById("item");
+        const gst = document.getElementById("gst");
+        const totAmt = document.getElementById("totAmt");
+
+        // - button code
+        document.querySelector("#decre").onclick = function() {
+            if (+qty.value > 0) {
+                qty.value--;
+            }
+
+            compute();
+        }
+
+        // + button code
+        document.querySelector("#incre").onclick = function() {
+            qty.value++;
+            compute();
+        }
+
+        function compute() {
+            iamt = qty.value * 200;
+            tax = iamt * 0.08;
+            tamt = iamt + tax;
+
+            itemTotal.value = `${iamt}`;
+            gst.value = `${tax}`;
+            totAmt.value = `${tamt}`;
+        }
+    </script>
+</body>
+</html>

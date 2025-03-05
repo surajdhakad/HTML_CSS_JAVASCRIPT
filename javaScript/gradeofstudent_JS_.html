@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Report</title>
+    <script src="gradestudent.js" defer></script>
+    <style>
+        .maindiv {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column; /* Use flex-direction: column for vertical layout */
+         
+            height: 650px;
+            width: 350px;
+            background-color: skyblue;
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        p {
+       
+          
+            color: blueviolet;
+            font-size: large;
+            margin-bottom: 10px; /* Add spacing between elements */
+        }
+
+        input[type="text"] {
+           
+            width: 150px; /* Adjust width as needed */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="maindiv">
+        <h1>Marks Report</h1> 
+       
+        <p>Roll No   : <input type="text" id="rollNo" placeholder="Enter Roll No"></p>
+        <p>Name      : <input type="text" id="name" placeholder="Enter Name"></p>
+        <p>Marks</p>
+        <p>HTML      : <input type="text" id="htmlMarks" placeholder="Enter Marks"></p>
+        <p>CSS       : <input type="text" id="cssMarks" placeholder="Enter Marks"></p>
+        <p>JavaScript: <input type="text" id="jsMarks" placeholder="Enter Marks"></p>
+        <p>Bootstrap : <input type="text" id="bootstrapMarks" placeholder="Enter Marks"></p>
+        <button onclick="getResult()">Submit</button> 
+
+        <p><input type="text" id="total" placeholder="Total Marks" readonly></p>
+        <p><input type="text" id="average" placeholder="Average" readonly></p>
+        <p><input type="text" id="grade" placeholder="Grade" readonly></p>
+    </div>
+</div>
+    
+</body>
+
+</html>

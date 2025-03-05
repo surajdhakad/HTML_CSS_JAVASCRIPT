@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <h3>demo on arrays</h3>
+    <script>
+      let a=['shiva',123,true,10.5,new Date()];
+      document.write(`A:${a}<br>`);
+
+    const b=[10,20,30];
+    document.write(`B:${b}<br>`);
+
+    b[0]=11;
+    b[3]=44;
+   
+    document.write(`B:${b}<br>`);
+
+    //b=[1,2,3]; error
+    const c=[1,2,3,4,5,6,7,8,9];
+    document.write(`C ${c}<br>`);
+
+    c.length=5;
+    document.write(`C ${c}<br>`);
+    c.length=7;   // this resizing of arfray its dynamic neture 
+    document.write(`C:${c}<br>`);
+    c[5]=101;
+    c[6]=201;
+    document.write(`C ${c}<br>`);
+    c.length=0;
+    document.write(`C ${c}<br>`);
+
+
+    </script>
+</body>
+</html>

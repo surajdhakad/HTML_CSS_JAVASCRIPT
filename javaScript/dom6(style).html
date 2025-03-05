@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>DOM5</title>
+    
+</head>
+<body>
+    <h2>demo on element object (styles)</h2>
+
+    <h1 id="h" style="background: red; color: aliceblue;">Document Object Model</h1>
+
+    <hr>
+    <script>
+        const h2=document.querySelector("#h");  //document.getElementById("h");
+        document.write(`${h2.style.color} ${h2.style.background}`);
+
+        h2.style.background="blue";
+        h2.style.color="yellow";
+        h2.style.display="inline-block";
+        h2.style.boxShadow="0 0 15px red";
+
+        document.body.style.background="pink";
+    </script>
+</body>
+</html>

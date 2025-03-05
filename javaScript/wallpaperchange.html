@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> chnaging wallpaper</h1>
+
+
+    <div>
+        saskdndaskdsadjwfjewtefadwadwdsadsasfdsad
+    </div>
+    <h2>ffwdwdewrffsdsdsqdsfegf</h2>
+
+
+    <script>
+        const imgs=['box1-1.jpg','box1-2.jpg' ,'box1-3.jpg','box1-4.jpg','box2-1.jpg'];
+
+        let i=0;
+
+        setInterval(function(){
+            document.body.style.backgroundImage=`url(${imgs[i]})`;
+            document.body.style.backgroundSize="cover";
+            i++;
+            if(i===imgs.length)
+            i=0;
+           
+        },"3000");
+    </script>
+</body>
+</html>

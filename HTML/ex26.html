@@ -1,0 +1,39 @@
+<!-- example on "input" tag  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title>My 26th page</title>
+	<link rel="icon" href="images/logo.png">
+ </head>
+  <body>
+	<h3>demo on email, url, date, time, week, month, color fields</h3>
+	<form id="f" action="test.aspx">
+	  <label for="em">enter email id</label> 
+	  <input type="email" id="em" name="em">
+	  <br>
+	  <label for="url">enter url</label>
+	  <input type="url" id="url" name="url">
+	  <br>
+	  <label for="d">select date</label>
+	  <input type="date" id="d" name="d" min="2001-01-01" max="2024-10-22">
+	  <br>
+	  <label for="t">select time</label>
+	  <input type="time" id="t" name="t">
+	  <br>
+	  <label for="dt">select date&time</label>
+	  <input type="datetime-local" id="dt" name="dt">
+	  <br>
+	  <label for="w">select week</label>
+	  <input type="week" id="w" name="w">
+	  <br>
+	  <label for="m">select month</label>
+	  <input type="month" id="m" name="m">
+	  <br>
+	  <input type="color" id="c" onchange="document.body.style.background=c.value">
+	  <br>
+	  <!--
+	    <input type="submit">	OR  -->
+	  <button type="submit">Submit</button>
+	</form>
+  </body>
+</html> 

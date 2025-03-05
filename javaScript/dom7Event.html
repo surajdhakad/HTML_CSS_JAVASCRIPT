@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom 7</title>
+</head>
+<body>
+    <h3>demo on element object (event)</h3>
+    <button id="bt1">push here</button>
+    <button id="bt2">pull here</button>
+
+
+    <script>
+        const b1=document.querySelector("#bt1");
+        b1.addEventListener("click",function(){
+            alert("hey ,why are you push me")
+        });
+
+
+        const b2=document.querySelector("#bt2");
+        b2.onclick=function(){ alert("oooey why are u pulling");}
+
+
+        // b2.onmouseover=code;
+        // b2.onmouseout=code;
+    </script>
+</body>
+</html>

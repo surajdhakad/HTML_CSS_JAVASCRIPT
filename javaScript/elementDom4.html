@@ -1,0 +1,35 @@
+<!-- 
+settings:
+eleobj.attr=> return value
+                eleobj.getAttribute("attr")
+
+
+                eleobj.attr=val assign val  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom</title>
+</head>
+<body>
+    <h3>demo n element object properties</h3>
+
+    <h1 id="h">hello</h1>
+    <input type="text" id="tb" value="1000">
+    <hr>
+    <script>
+        const h1=document.getElementById("h");
+        document.write(`${h1.innerHTML}<br>`);
+  //    h1.innerHTML="";
+
+      h1.innerHTML+="shiva";
+
+
+      const tf=document.getElementById("tb");
+      document.write(`${tf.value}<br>`);
+         //tf.value="";
+      tf.value=2000;
+    </script>
+</body>
+</html>

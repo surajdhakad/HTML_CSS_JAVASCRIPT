@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        const sum = function (...n) {
+            let tot = 0;
+            n.forEach(e => tot += e);
+            return tot;
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <h3>demo on rest operator</h3>
+    <p>
+        <b> spread function and
+            rest opraror</b><br>
+
+            <script>
+                document.write(` first =${sum(10,20,30)}<br>`);
+                document.write(`${sum()}<br>`);
+                document.write(`${sum(10,20)}<br>`);
+                document.write(`${sum(10)}<br>`);
+             
+
+            </script>
+
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* define style from flex app*/\
+
+
+h1{
+	
+	
+	margin:25px 0;
+}
+.flex-box{
+	
+	display:flex;  /*row*/
+	flex-direction:row; /*row  ,reverse column*/
+	flex-wrap:wrap;  /*wrap or second line */
+	/*gap:15px;*/
+	
+	justify-content:space-evenly;/* sitytation wise adjuste
+	,space-between,pace-around,space-evenly*/
+	/*background:rgb(4,20,213);
+	color:#fff;*/
+}
+.flex-box div{
+	box-shadow:0 0 25px black; 
+	width:50;
+	border-radius:20px;
+	text-align:center;
+	padding-bottom:10px;
+	
+}
+img{
+	width:100%;
+	height:200px;
+	border-radius:20px 20px 0 0;
+	
+}
+/*
+.flex-box div:hover{
+	        box-shadow:0 0 30px red;
+			background:blue;
+			color:white;
+			width:22%;
+}  
+*/
+
+.flex-box:hover > :not(:hover){
+	
+	 filter:blur(3px);
+	
+}
+
+

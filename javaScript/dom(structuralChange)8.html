@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <
+    <title>Dom 8</title>
+</head>
+<body>
+    
+    <h3>demo on removing & adding elements</h3>
+
+    <div id="div1">
+
+        <h2>Apple</h2>
+        <span>Mango</span>
+        <p>orange</p>
+        <button onclick="document.querySelector('#div1').remove ()"> delete element</button>
+
+    </div>
+
+     <div id="div2">
+        <button id="bt2"> add element</button>
+     </div>
+    <script>
+   documentt.querySelector("#bt2").onclick =()=>{
+    const i=document.createElement("img");
+
+   i.src="box2-2.jpg";
+   i.style.width="200px";
+   i.style.height="150px";
+   i.style.borderRadius="10px";
+
+  // document.body.appendChild(i);
+  document.querySelector("span").appendChild(i);
+
+   }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+
+    <h3>printing multiplication table</h3>
+    <input type="number" id="tableNum" placeholder="enter table number">
+    <button onclick="printTable()"> print table</button> <br>
+    <output id="op"></output>
+
+    <script>
+        function printTable() {
+            let tn, res;
+
+            tn = +tableNum.value;
+    //   op.innerHTML = "";   output change  //
+
+            for (let i = 1; i <= 10; i++) {
+                res = tn * i;
+
+                //document.write(tn+"*"+i+"="+res+"<br>")
+                op.innerHTML += tn + "*" + i + "=" + res + "<br>";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>demo on array method</h3>
+    <script>
+
+        //splice    splice(start-index,count)
+
+
+        const eles = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+        // document.write(`eles => ${eles}<br>`);
+        // //delete index wise
+        // eles.splice(3, 3);
+        // document.write(`after delete eles => ${eles}<br>`);
+
+        // //undation
+        // eles.splice(3, 2, 101, 202)
+        // document.write(`after updattion eles => ${eles}<br>`);
+
+        // //inserting
+
+        // eles.splice(4, 0, 111, 222, 333)
+        // document.write(`after updattion eles => ${eles}<br>`);
+
+
+
+
+        //slice spliting 
+        document.write(`before use slice eles => ${eles}<br>`);
+        let x=eles.slice(0,5);
+        document.write(` x => ${x}<br>`);
+        let y=eles.slice(5);
+        document.write(`y => ${y}<br>`);
+
+        document.write(`eles => ${eles.slice(-2)}<br>`);
+
+       for(let i=1;i<=eles.length;i++){
+        document.write(`eles => ${eles.slice(-i)}<br>`);
+       }
+
+       for(let i=eles.length-1; i>=1;i--){
+        document.write(`eles => ${eles.slice(-i)}<br>`);
+       }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on element object properties (attributes)</h3>
+
+    <img src="/box2-2.jpg" alt="" width="200" height="160">
+    <br>
+    <input type="password" id="pw">
+    <hr>
+
+    <script>
+     const i=  document.images[0];
+     document.write(`${i.src} ${i.width} ${i.height}<br>`);
+        //i.getAttribute("src");
+    i.src="/box3-4.jpg";   //i.getAttribute("src","animal")
+    i.width="400";
+    i.removeAttribute("height");
+    i.title="AAAAAAAAA";
+
+    document.getElementById("pw").type="password";
+    </script>
+</body>
+</html>

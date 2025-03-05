@@ -1,0 +1,129 @@
+
+
+
+<!--
+  pseudo elements
+  
+   2.elements
+   ::
+
+pseudo classes:
+syn:
+     ::p-elements{
+          prop:val;
+		  .....
+               }		  
+		   
+		 
+		 
+	  --->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href ="a.jpeg"/>
+
+<link rel="stylesheets" href="test2.css"/>
+
+ 
+
+<style >
+h2::before{
+
+  content:'hi';
+}
+h2::after{
+content:'\1f64A';
+}
+[type="text"]::placeholder
+{
+   color:blue;
+   text-align:center;
+}
+
+[type="password"]::placeholder
+{
+   color:orange;
+   text-align:right;
+}
+
+p::first-letter
+{
+color:red;
+background:yellow;
+font-size:200%;
+}
+
+p::first-line
+{
+color:blue;
+
+}
+
+::selection{
+        background: black;
+		color:green;
+}
+
+ul li::marker{
+
+   color:green;
+}
+
+ol li::marker{
+
+   color:teal;
+   font-size:120%;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<h3> demo on pseudo elements </h3>
+<h2>apple</h2>
+<h2>mango</h2>
+<h2>orange</h2>
+
+<p>The tour will start with the T20I leg
+ before the focus shifts to the ODIs. 
+ India last played an ODI series against</p>
+
+
+
+<p>The Indian cricket team will begin their ICC Champions Trophy preparations with an
+ ODI series against England in India.
+ The tour will start with the T20I leg
+ before the focus shifts to the ODIs. 
+ India last played an ODI series against
+ Sri Lanka where they lost the series 2-0.
+ India should opt for a</p>
+ 
+ 
+ <input type="text" placeholder="enter user name"><br>
+ <input type="password" placeholder="enter password"><br>
+ 
+ 
+ <ul>
+ <li> red</li>  <li> red</li>  <li> red</li> 
+ </ul>
+ 
+ <ol>
+  <li> red</li>  <li> red</li>  <li> red</li> 
+</ol>
+
+
+ </body
+
+</html> 

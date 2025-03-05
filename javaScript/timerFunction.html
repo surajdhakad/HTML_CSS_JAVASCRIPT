@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <h2>demo on timer fucntion</h2>
+
+    <h1 id="dt">date</h1>
+    <h1 id="t">Time</h1>
+
+
+    <script>
+        document.querySelector("#dt").innerHTML=new Date().toLocaleDateString();
+
+
+        setInterval( ()=>{
+   document.querySelector("#t").innerHTML=new Date().toLocaleTimeString();
+        },"1000");
+
+
+
+        // setInterval( ()=>{
+        //     document.body.style.background='red';
+        // },"3000");
+    </script>
+
+
+<button id="start">Start color</button>
+<button id="stop"> stop color</button>
+
+
+<script>
+  let i;
+
+  document.querySelector("#start").onclick=function(){
+    i=setInterval( ()=>{
+   document.body.style.background=`#${Math.random()*1000000|0}`;
+},"100");
+  }
+  
+
+
+//stop button
+
+document.querySelector("#stop").onclick=()=>clearInterval(i);
+</script>
+</body>
+</html>

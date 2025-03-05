@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on array destructuring </h3>
+
+    <script>
+        const a=[12,34,67];
+        // let x,y,z;
+        //  x=a[0],y=a[1],z=a[2];
+        //  x=a[0];
+        //  y=a[1];
+        //  z=a[2];
+
+        let [x,y,z]=a;  //destructuring
+        document.write(`x= ${x}<br> y= ${y}<br> z= ${z}<br>`);
+    //    [x,y,z]=[12,34,67];
+
+    const eles=['html','css','js','java','jsp','servalate','corejava','jdbc'];
+    let[i,j]=eles;   //destructuring
+    document.write(`i= ${i}<br> j= ${j}<br>`);
+
+
+    let [p,q,...r]=eles;
+    document.write(`p= ${p}<br> q= ${q}<br> r=${r}<br>`);
+
+    let v1=100,v2=200;
+     [v2,v1]=[v1,v2];
+     document.write(`v1= ${v1}<br> v2= ${v2}<br>`);
+    </script>
+</body>
+</html>

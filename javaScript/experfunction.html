@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="expresion_Function.js"></script>
+</head>
+<body>
+    
+
+    <h3>demo on expresion_Function</h3>
+
+    <script>
+        document.write(`${add}<br>`);
+
+        document.write(`${add(10,20)}<br>`);
+        document.write(`${product(15,9)}<br>`);
+
+        const eles=[6,100,23,80,505];
+
+          eles.forEach(
+            function(e)
+           {
+          console.log('EF');
+            document.write( ` $ {e} `);
+
+           }
+            
+          );
+
+
+
+          let s=0;
+          eles.forEach(function(e){
+            s+=e;
+          });
+          document.write (`<br>sum of elee=${s}`);
+
+          eles.sort(
+            function(i,j){
+                console.log('sort');
+                return i-j;   //assending order
+            }
+          );
+          document.write (`<br>sort=${eles}<br>`);
+
+
+          eles.sort(
+            function(i,j){
+                console.log('sort');
+                return j-i;   //desending order
+            }
+          );
+          document.write (`<br>sort=${eles}<br>`);
+
+
+          
+
+    </script>
+    <button id="bt">click here</button>
+
+    <script>
+        bt.onclick=function(){
+            alert ("button clicked");
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>demo on array method</h3>
+    <script>
+        const eles = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        let str = "suraj dhakada ";
+
+        document.write(`eles= ${eles}<br>`);
+        document.write(`str= ${str}<br>`);
+
+        //include()
+        document.write(`10 found? ${eles.includes(10)}<br>`);
+        document.write(`10 found? ${eles.includes(55)}<br>`);
+
+
+        document.write(`suraj= found? ${str.includes('suraj')}<br>`);
+        document.write(`su= found? ${str.includes('su')}<br>`);
+
+        //idexOf() =>   ind,1st,occ,-1    returning index
+
+        document.write(`50= found? ${eles.indexOf(50)}<br>`);
+        document.write(`105= found? ${eles.indexOf(105)}<br>`);
+
+
+
+        document.write(`vivek= found? ${str.indexOf('vivek')}<br>`);
+        document.write(`su= found? ${str.indexOf('su')}<br>`);
+
+
+        document.write(` ${str.indexOf('r')}<br>`);
+        document.write(`30@ ${eles.indexOf(30, 3)}<br>`);
+        //2nd plece of 
+        document.write(`2nd a@ ${str.indexOf('a') + 1}<br>`);
+
+        //last index
+        document.write(`2nd a@ ${str.lastIndexOf("a")}<br>`);
+
+
+        //reverse()
+
+
+        eles.reverse();
+        document.write(`reverse eles ${eles}<br>`);
+
+
+        //to string
+        document.write(`tostring using= ${eles}<br>`);
+
+
+        //sort method
+        eles.sort();
+        document.write(`eles sort = ${eles}<br>`);
+
+
+        //sort string 
+        let names = ['rama', 'ramana', 'ramarao', 'ramakrishna', 'raman', 'ramaram'];
+        document.write(`names = ${names}<br>`);
+        names.sort();
+        document.write(`sort names = ${names}<br>`);
+
+        //join method
+
+        document.write(`${eles.join("$")}<br>`);
+        //aninomus array and string 
+        document.write(`${[10, 20, 30].includes(20)}<br>`);
+        //"welcome".indexOf("come");
+
+        document.write(`${"welcome".indexOf("come")}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- 
+demo om string intropolation -->
+
+<script>
+
+
+    let n = "ram";
+    document.write(n + "<br>");
+    document.write(`${n}<br>`);
+    //document.write("${n}<br>")  invalid
+    document.write("sum is 10+20 <br>");
+    document.write(`sum is ${10 > 20}<br>`);
+
+    let tn = 10;
+    for (let i = 1; i <= 10; i++) {
+        // document.write(tn+"*"+i+"="+tn*i+"<br>");
+        document.write(`${tn}*${i}=${tn * i}<br>`);
+
+    }
+
+    let st = `hi ${n}`;
+    document.write(st);
+
+    let x = 15, y = 9, res;
+
+    res = `sum is : ${x + y}<br> product is :${x * y}<br>  mod is: ${x % y}<br> `
+    document.write(res);
+
+</script>

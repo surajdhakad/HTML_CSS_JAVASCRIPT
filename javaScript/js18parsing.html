@@ -1,0 +1,52 @@
+<!-- Parsing -->
+<!-- 1.implicit parse -->
+<!-- **,*,/,%,-,++,-- -->
+
+<!-- 2.explicit parse -->
+<!-- Other then the above operator explicit parsing required  -->
+<!-- a.using function -->
+<!-- parseInt() => String format into integer format  -->
+<!-- syn: window.parseInt(“data”) -->
+<!-- “10”=> 10 -->
+<!-- “20.45”=> 20 -->
+<!-- “ram”=> NaN (not possible)  -->
+
+<!-- parseFloat() => strring format into floating format  -->
+<!-- syn: -->
+<!-- window.parseFloat(“data”) -->
+<!-- “10”=> 10 -->
+<!-- “20.45”=> 20 -->
+<!-- “ram”=> NaN (not possible)  -->
+
+<!-- b.using parse operator  -->
+
+	 <!-- + is parse operator -->
+	<!-- => unary operator  -->
+
+
+
+
+<script>
+//auto parsing 
+let x="15",y="9";
+    document.write(x-y,'<br>');
+    document.write(x+y,'<br>');
+    document.write(x/y,'<br>');
+    document.write(x%y,'<br>');
+    document.write(++x,'<br>'); 
+    document.write(--y,'<br>');
+    document.write(y**"3",'<br>');
+
+
+
+
+    let i="20" ,j="7";
+	
+	//manual Parsing
+	
+	document.write(parseInt(i)+parseInt(j),'<br>');
+	document.write(+i + +j,'<br>');
+    
+    
+
+</script>

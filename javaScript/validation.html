@@ -1,0 +1,32 @@
+<!-- validation
+
+=> checking user inputs
+=> form validation/clint side validations / js validation -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="text" id="un">
+    <button onclick="checkUser()"> check user</button>
+
+    <script>
+        function checkUser()
+        {
+            const exp=new RegExp(/siva/i);
+
+        alert(exp.test(un.value))
+            
+        }
+        
+    </script>
+</body>
+</html>

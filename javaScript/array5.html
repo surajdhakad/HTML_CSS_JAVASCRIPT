@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <h3>demo on for in  and for of loop</h3>
+    <script>
+  
+
+
+const a=[11,22,33];
+for(let i in a){
+
+a[i]+=5;
+document.write(`${i}=> ${a[i]}<br>`);
+}
+
+
+
+// for of loop
+
+
+
+
+const b=[2,3,4,5,5];
+for(let e of b){
+    document.write(`${e}<br>`);
+   // a[e]+=5;  not supported because index is not 
+}
+
+let str="welcome";
+
+for(let c of str){
+    document.write(`${c}<br>`);
+
+}
+
+
+for(let c in str){
+    document.write(`${c}<br>`);
+
+}
+      
+
+    </script>
+</body>
+</html>

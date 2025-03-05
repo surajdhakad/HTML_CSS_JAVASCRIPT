@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+  
+    <link rel='stylesheet'  href='index2.css'>
+    <script src="js2.js"></script>
+   
+</head>
+<body>
+    <div class="calc">
+        <h2>Interest</h2>
+        <p>
+            <label for="pamt">Principle Amount</label><br>
+        <input type="number" id ="pamt"  autofocus>
+        <span>&#8377;</span>
+        </p>
+        <p>
+            <label for="time">Time</label><br>
+        <input type="number" id ="time">
+        <span>Year(s)</span>
+        </p>
+        <p>
+            <label for="roi">Rate of Interest</label><br>
+        <input type="number" id ="roi">
+        <span>%</span>
+        </p>
+        <p align="center">
+            <button onclick="calcAmount()">Calc Amount</button>
+
+        </p>
+        <p align="right">
+            <output id="intAmt"></output><br>
+            <output id="toAmt"></output>
+        </p>
+    </div>
+</body>
+</html>

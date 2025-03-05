@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>demo on IE/II funcction</h3>
+    <script>
+        (function () {
+            document.write('hi iam ii functon<br>');
+        })();
+
+
+
+        (() => {
+            document.write('hi iam II functon');    //anonimous function is use and throw function
+        })();
+
+        //set parameter in anonimous function
+
+        ((x, y) => {
+            document.write(`sum is =${x + y}`);
+
+        })(10, 20);
+
+    </script>
+</body>
+
+</html>

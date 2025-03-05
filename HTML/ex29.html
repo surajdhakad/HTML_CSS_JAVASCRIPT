@@ -1,0 +1,98 @@
+<!-- student registration form designing -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="icon" href="logo.png"/>
+	<style>
+	   body{
+	    background:black;
+	  }  
+	  #main{
+	    background:black;
+		color:white;
+		width:350px;
+	    margin:auto;
+		border-radius:15px;
+		padding:25px;
+	  }
+	  #main:hover{
+	    box-shadow:0 0 30px yellow;
+	  }
+	  span{
+	    color:red;
+	  }
+	</style>
+  </head>
+  <body>
+	<div id="main">
+	  <h2 align="center"><u>Registration Form</u></h2>
+	  <form id="frm1" action="registration.html" autocomplete="off">
+		<div>
+		  <label for="fna">Fullname</label> <span>*</span> <br>
+		  <input type="text" id="fna" name="fna" required autofocus>
+		</div>
+		<br>
+		<div>
+		  <label for="em">EmailId</label> <span>*</span> <br>
+		  <input type="email" id="em" name="em" required>
+		</div>
+		<br>
+		<div>
+		  <label for="ph">Contact number</label> <span>*</span>
+		  <br>
+		  <input type="number" id="ph" name="ph" min="6000000000" max="9999999999" required>
+		</div>
+		<BR>
+		<div>
+		  <label for="dob">Date of Birth</label> <br>
+		  <input type="date" id="dob" name="dob" min="1996-01-01" max="2010-12-31">		  
+		</div>
+		<br>
+		<div>
+		  <label>Gender:</label> <br>
+		  <input type="radio" id="g1" name="g" value="m" checked> <label for="g1">Male</label> &nbsp; 
+		  <input type="radio" id="g2" name="g" value="f">
+		  <label for="g2">Female</label> &nbsp; 
+		  <input type="radio" id="g3" name="g" value="o"> <label for="g3">Others</label>
+		</div>
+		<br>
+		<div>
+		  <label for="course">Which Course?</label> <br>
+		  <select id="course" name="course">
+		    <option value="">Select Course</option>
+			<option value="c">C Programme</option>
+			<option value="c++">CPP Programme</option>
+			<option value="fsjd">Full Stack Java</option>
+			<option value="fsdnd">Full Stack Dot.Net</option>
+			<option value="fspd">Full Stack Python</option>
+			<option value="hjs">HTML-JavaScript</option>
+		  </select>
+		</div>
+		<br>
+		<div>
+		  <label for="mot">Mode of Training</label><br>
+		  <select id="mot" name="mot">
+		    <option value="ct">Classroom Training</option>
+			<option value="ot">Online Training</option>
+			<option value="pmt">Placement Training</option>
+			<option value="pt">Project Training</option>
+			<option value="inter">Internship</option>
+		  </select>		  
+		</div>
+		<br>
+		<div>
+		  <label for="addr">Full Address</label> <br>
+		  <textarea id="addr" name="addr" rows="5" cols="25"></textarea>
+		</div>
+		<br>
+		<div align="center">
+		  <input type="checkbox" id="tc" name="tc" value="true" required> <label>I Accepted all Terms and Conditions</label>		  
+		</div>
+		<br>
+		<div align="center">
+		  <button type="submit">Register Now</button>
+		</div>	  
+	  </form>	
+	</div>
+  </body> 	
+</html>

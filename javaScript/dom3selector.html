@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom 3</title>
+
+
+    <style>
+        #i{
+            color: red;
+            
+        }
+        .c
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>demo on document object mehtods</h3>
+
+    <h2 id="i">html</h2>
+    <span class="c">csss</span>
+    <p class="c"> java scropt</p>
+    <div class="c">bootstrap</div>
+    <h3 class="c">react js</h3>
+    <hr>
+
+
+
+    <script>
+      const ob1=  document.querySelector("#i");
+      document.write(`${ob1}<br>`);
+
+
+      const ob2=  document.querySelectorAll(".c");
+      document.write(`${ob2}<br>`);
+
+
+      for(let e of ob2)
+      document.write(`${e} => ${e.tagName}<br>`);
+    </script>
+</body>
+</html>
+
+
+<!-- dom=> js use dom to perform some  operation dynamically on web page
+
+data manipulation /style ,structural
+ 
+-->

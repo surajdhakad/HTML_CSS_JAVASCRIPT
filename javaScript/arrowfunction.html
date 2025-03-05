@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arrow_Function.js"></script>
+</head>
+
+<body>
+    <h3>arrow function</h3>
+
+    <script>
+        myfun();
+        document.write(`<br>${add(10, 20)}<br>`);
+        document.write(`${product(10, 20)}<br>`);
+        document.write(`${natsum(10)}<br>`);
+        document.writeln(`${area(20)}<br>`);
+
+
+        const eles = [90, 55, 100, 30];
+
+        eles.forEach(x => document.writeln(`${x}`));
+
+        let s = 0;
+        eles.forEach(e => s += e);
+        document.write(`<br>sum of elee=${s}`);
+        //callback
+
+        eles.sort((i, j) => i - j);  //assending order
+        document.write(`<br>sort=${eles}<br>`);
+
+        //callback
+        eles.sort((i, j) => j - i);  //desending order
+
+        document.write(`<br>sort=${eles}<br>`);
+
+
+        
+
+    const a=[1,2,3,5,6,7,8,9,10];            //filter() is method use any filter oprataion on type foreach 
+
+
+       let even=  a.filter(e=>e%2==0); 
+       let odd=a.filter(e=>e%2!==0);
+       document.writeln(`even= ${even}<br>`) ; 
+       document.writeln(`odd =${odd}<br>`) ; 
+
+
+        let p=a.filter(e=>{
+            let s=0;
+        for(i=1;i<=e;i++){
+            if(e%i===0)
+            s+=i;
+        }
+        return e===s? true:false;
+         });
+
+         document.writeln(`perfect =${p}<br>`) ; 
+
+      let b=[2,5,8,15];
+       document.writeln(`B =${b}<br>`) ; 
+       b=b.map( e => e*2);
+       document.writeln(`update =${b}<br>`) ; 
+
+    </script>
+          <button id="bt">click here</button> 
+    <script>
+       
+        bt.onclick = () => alert("button clicked");
+
+    </script>
+</body>
+
+</html>

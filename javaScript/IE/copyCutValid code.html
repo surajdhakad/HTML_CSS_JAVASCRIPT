@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>Stoping copy cut & paste rightclick</h2>
+
+<p>'I only played because Virat Kohli got injured': Shreyas Iyer's
+     movie night cut short after Rohit's last-minute call</p>
+
+<input type="text" name="" id="win">
+
+
+
+<script>
+    window.addEventListener("copy",stopOpe);
+    window.addEventListener("cut",stopOpe);
+    window.addEventListener("paste",stopOpe);
+    window.addEventListener("contextmenu",stopOpe);
+
+
+    function stopOpe(win){
+        win.preventDefault();
+
+        alert("operation not allowed");
+    }
+</script>
+</body>
+</html>

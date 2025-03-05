@@ -1,0 +1,119 @@
+
+<!--   -->
+
+<!-- keyframes 
+syn:
+@keyframes ani-name
+{
+from{
+pro:val;
+...
+}
+to{
+pro:val;
+....
+}
+
+} 
+
+
+
+@keyframes ani-name{
+x%{
+pro:val;
+....
+
+y%{
+pro:val;
+....
+}
+}
+
+
+
+selector{
+animation-name: ani-name;
+animation-duration:Nsec;
+animation-iteration-count:1i/count/ infinite;    (1 is default count )
+animation-delay:Nsec;
+animation-directiion:normal/reverse/alternate;
+}
+
+
+  -->
+  
+  
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href ="a.JPeg"/>
+<link rel="stylesheet" href="grid.css">
+ 
+
+<style >
+/*
+@keyframes colorchange
+{
+from{
+background:red;
+}
+to{background:blue;}
+}
+body{
+animation-name:colorchange;
+animation-duration:0.3s;
+animation-iteration-alternate;
+animation-directiion:reversed;
+animation-delay:5s;
+*/
+/*
+@keyframes colors
+{
+0%{color:red;}
+25%{color:green;}
+50%{color:blue;}
+75%{color:hotpink;}
+100%{color:cyan;}
+}
+
+
+
+
+
+
+#h1{
+animation:colors 10s;
+}
+#h2{
+animation:colors 10s;
+}
+*/
+
+
+@keyframes loading{
+
+100%{transform:rotate(360deg);}
+}
+.load{
+width:150px;
+height:150px;
+border:15px solid blue;
+border-top:25px solid cyan;
+border-radius:50%;
+animation:loading 4s linear infinite;
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div  class="load" >hello </div>
+
+</body>
+</html>

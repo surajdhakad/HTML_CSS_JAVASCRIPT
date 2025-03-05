@@ -1,0 +1,41 @@
+
+<!-- spread operator
+... is unary operaor we should use this operaor as prefix
+its spread operaor
+the spread operaor represent all remaining value/so on value -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on spread operaor(...)</h3>
+
+
+    <script>
+        const x=[12,34,78];
+        let y=[...x]; // copying in data not effect in memory block
+
+       // y=x;   copying reference
+
+        document.write(` x ${x}<br>`);
+        document.write(` y ${y}<br>`);
+   
+
+
+         const ft=['html','css','js','java'];
+         const bt=['react','servalate','jsp'];
+         const db=['oracle','sql','sqlplus'];
+         const fs=[...ft,...bt,...db];     //array merge
+         document.write(`fs=> ${fs}<br>`);
+
+         const a=[...ft,'react',...bt];
+         document.write(`a=> ${a}<br>`);
+    </script>
+
+</body>
+</html>

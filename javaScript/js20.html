@@ -1,0 +1,41 @@
+<!-- html with js implements -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h3> Airthmaitc cal</h3>
+<label> first number ,</label>  <br>
+<input type="text" id="firstnum">  <br>
+<label> second number ,</label>  <br>
+<input type="text" id="secnum">  <br>
+<input type="text" id="res" placeholder="result" readonly>  <br>
+<button onclick="res.value=firstnum.value-secnum.value">-</button> <br>
+<button onclick="res.value=firstnum.value+secnum.value">+</button> <br>
+<button onclick="res.value=firstnum.value*secnum.value">*</button> <br>
+<button onclick="res.value=firstnum.value%secnum.value">%</button> <br>
+<output id="res"></output>
+
+
+<script>
+function addition()
+{
+let x,y,sum;  //local vars
+x=firstnum.value;
+y=secnum.value;
+sum=+x + +y;
+//document.write("sum is :"+sum);
+//or 
+//console.log("sum is :"+sum);
+res.value="sum is :"+sum;
+}
+</script>
+
+
+</body>
+</html>
